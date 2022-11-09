@@ -20,12 +20,20 @@ public class AverageAndEvenNumber {
                 System.out.println(i);
             }
         }
+
         for (int i = 1; i <= numb; i++) {
             if ((i % 3 == 0 && i % 4 == 0)) {
                 avr += i;
                 count++;
             }
         }
-        System.out.println("The average of numbers from 0 to " + numb + "is" + avr / count);
+
+        if (count == 0 && avr == 0) {
+            System.out.println(
+                    "Sayılar 0 çıktı"
+            );
+        } else {
+            System.out.println("The average of numbers from 0 to " + numb + "is" + avr / count);
+        }
     }
 }
